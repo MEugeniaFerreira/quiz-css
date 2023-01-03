@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Quiz | Você consegue acertar qual é o filme pelo título em português de Portugal?</title>
+</head>
+<body>
+  <div class="intro py-3 bg-primary text-center">
+    <div class="container">
+      <h2 class="text-light display-3 my-4">Quiz</h2>
+    </div>
+  </div>
+
+  <div class="final-score-container py-4 {# d-none #} bg-light text-center">
+    <div class="container lead">
+      <p>Você acertou<span class="text-primary display-4 p-3">0%</span>do quiz!</p>
+    </div>
+  </div>
+
+  <div class="quiz py-4 bg-dark">
+    <div class="container">
+      <h2 class="my-5 text-white">Testes seus conhecimentos de CSS</h2>
+
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. Em diversos situações é possível observar que, ao passarmos o mouse por cima de um botão, 
+            esse elemento muda de cor. Também é 
+            possível estipular que exista um delay nessa mudança de cor. Para chegar nesse resultado, delay +
+            mudança de cor ao passar o mouse por um elemento, quais conceitos CSS podem ser utilizados?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="A" >
+              Propriedade <code>background-color</code>, pseudoclasse <code>hover</code>, propriedade <code>transition</code>
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="B">
+              Propriedade <code>bcg-color</code>, pseudoclasse <code>active</code>, propriedade <code>transform</code>
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. O flexbox fornece ferramentas para criação rápida de layouts complexos e flexíveis para resolver problemas que, anteriormente, tínhamos muita dificuldade em resolver. 
+            Quais propriedade flexbox podemos aplicar em layouts para conseguir centralizar items vertical e horizontalmente?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="A" >
+              <code>align-self: center</code> + <br><code>align-content: center;</code>
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="B">
+              <code>align-items: center</code> + <br><code>justify-content: center;</code>
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. Como podemos centralizar um elemento com display: block horizontalmente em um layout sem usar nenhuma ferramenta flexbox ou grid?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="A" >
+              Estipulamos uma largura <code>width</code>, e adicionamos a propriedade <code>margin: 0 auto</code>
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="B">
+              Estipulamos uma altura <code>height</code>, e adicionamos a propriedade <code>text-align: center</code>
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. A propriedade object-fit estipula como o conteúdo de um elemento, como um vídeo ou uma imagem, devem ser redimensionados para caber no 
+            container pai. Caso uma imagem deva ser posicionada dentro de um elemento de forma a tomar todo o espaço do container pai, sem parecer distorcida
+            ou modificada de alguma forma, como a propriedade object-fit deve ser usada?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="A" >
+              <code>object-fit: fill;</code>
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="B">
+              <code>object-fit: cover;</code>
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">5. A propriedade <code>width</code> estipula a largura de um elemento. Além disso, também é possível usar em conjunto com a <code>width</code> a propriedade <code>max-width</code> e <code>min-width.</code>
+            Ao usar essas outras propriedades, o que acontece com o valor original definido pela propriedade width?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="A" >
+              O valor será sobreescrito;
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="B">
+              Usar as duas propriedades gerará conflito e nenhum das propriedades definidas vai funcionar
+            </label>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <button class="btn bg-primary text-light">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
